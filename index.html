@@ -131,6 +131,59 @@ Machine learning models have become ubiquitous in modeling analog audio devices.
     </div>
      </div>
  </section>
+
+  <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+     <!-- Your audio here -->
+       <h2 class="title is-3">  </h2>
+   <h2 class="title is-3">Aliasing</h2>
+ <p>     
+The proposed methodology learns the target waveshape and replicates any aliasing present in the recordings. Therefore, the quality of the analog antialiasing filter used during the recording of the analog VCO and the digital antialiasing filter applied during data downsampling significantly affect the model's aliasing performance. 
+The following frequency domain plots show that the model reproduces the frequency content of the target recordings without introducing additional aliasing.
+The plots refer to triangle waves emulated by the LSTM model.
+  </p>
+      
+<div align="left">
+ <img src="./fig/10aliasing_fft.png" width="250">
+ <img src="./fig/20aliasing_fft.png" width="250">
+ <img src="./fig/30aliasing_fft.png" width="250">
+</div>
+
+
+<div align="left">
+ <img src="./fig/40aliasing_fft.png" width="250">
+<img src="./fig/50aliasing_fft.png" width="250">
+<img src="./fig/60aliasing_fft.png" width="250">
+</div>
+      </div>
+    </div>
+     </section>
+
+  <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+     <!-- Your audio here -->
+       <h2 class="title is-3">  </h2>
+   <h2 class="title is-3">Frequency-dependent waveshape</h2>
+ <p>     
+The following plots show how the waveshape of the analog VCO undergoes significant changes at various frequencies and how the model effectively learns these variations. 
+The top row refers to the sawtooth waveshape, while the bottom row refers to the square.
+ </p>
+
+      
+<div align="left">
+ <img src="./fig/0plot_saw_wave.png" width="400">
+<img src="./fig/4plot_saw_wave.png" width="400">
+</div>
+<div align="left">
+<img src="./fig/0plot_sq_wave.png" width="400">
+<img src="./fig/4plot_sq_wave.png" width="400">
+</div>
+      </div>
+    </div>
+     </section>
+  
   
 <!-- audio -->
 <section class="hero teaser">
