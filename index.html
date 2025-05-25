@@ -140,7 +140,7 @@ Machine learning models have become ubiquitous in modeling analog audio devices.
  <p>     
 The proposed methodology learns the target waveshape and replicates any aliasing present in the recordings. Therefore, the quality of the analog antialiasing filter used during the recording of the analog VCO and the digital antialiasing filter applied during data downsampling significantly affect the model's aliasing performance. 
 The following frequency domain plots show that the model reproduces the frequency content of the target recordings without introducing additional aliasing.
-The plots refer to triangle waves emulated by the LSTM model.
+The plots refer to triangle waves emulated by the LSTM model and computed with 2048 FFT points.
   </p>
       
 <div align="left">
@@ -155,6 +155,10 @@ The plots refer to triangle waves emulated by the LSTM model.
 <img src="./static/fig/50aliasing_fft.png" width="250">
 <img src="./static/fig/70aliasing_fft.png" width="250">
 </div>
+
+     <p>     
+The following plots show the spectra of the waves emulated by the LSTM model. On top is shown the target, while on the bottom is the emulation. The spectra are computed using 2048 FFT points.
+  </p>
 
       <div align="left">
  <img src="./static/fig/10aliasing_stft.png" width="250">
