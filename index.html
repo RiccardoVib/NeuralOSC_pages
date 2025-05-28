@@ -140,7 +140,7 @@ Machine learning models have become ubiquitous in modeling analog audio devices.
  <p>     
 The proposed methodology learns the target waveshape and replicates any aliasing present in the recordings. Therefore, the quality of the analog antialiasing filter used during the recording of the analog VCO and the digital antialiasing filter applied during data downsampling significantly affect the model's aliasing performance. 
 The following frequency domain plots show that the model reproduces the frequency content of the target recordings without introducing additional aliasing.
-The plots refer to triangle waves emulated by the LSTM model and computed with 2048 FFT points.
+The plots refer to triangle waves emulated by the LSTM model, computed using 2048 FFT points.
   </p>
       
 <div align="left">
@@ -159,18 +159,49 @@ The plots refer to triangle waves emulated by the LSTM model and computed with 2
      <p>     
 The following plots show the spectra of the waves emulated by the LSTM model. On top is shown the target, while on the bottom is the emulation. The spectra are computed using 2048 FFT points.
   </p>
+      <b>Triangle Wave</b>
 
       <div align="left">
- <img src="./static/fig/10aliasing_stft.png" width="250">
- <img src="./static/fig/20aliasing_stft.png" width="250">
- <img src="./static/fig/30aliasing_stft.png" width="250">
+ <img src="./static/fig/10tri_aliasing_stft.png" width="250">
+ <img src="./static/fig/20tri_aliasing_stft.png" width="250">
+ <img src="./static/fig/30tri_aliasing_stft.png" width="250">
 </div>
 
 
 <div align="left">
- <img src="./static/fig/40aliasing_stft.png" width="250">
-<img src="./static/fig/50aliasing_stft.png" width="250">
-<img src="./static/fig/70aliasing_stft.png" width="250">
+ <img src="./static/fig/40tri_aliasing_stft.png" width="250">
+<img src="./static/fig/50tri_aliasing_stft.png" width="250">
+<img src="./static/fig/70tri_aliasing_stft.png" width="250">
+</div>
+      <b>Sawtooth Wave</b>
+
+            <div align="left">
+ <img src="./static/fig/10saw_aliasing_stft.png" width="250">
+ <img src="./static/fig/20saw_aliasing_stft.png" width="250">
+ <img src="./static/fig/30saw_aliasing_stft.png" width="250">
+</div>
+
+
+<div align="left">
+ <img src="./static/fig/40saw_aliasing_stft.png" width="250">
+<img src="./static/fig/50saw_aliasing_stft.png" width="250">
+<img src="./static/fig/70saw_aliasing_stft.png" width="250">
+</div>
+
+
+      <b>Square Wave</b>
+      
+            <div align="left">
+ <img src="./static/fig/10square_aliasing_stft.png" width="250">
+ <img src="./static/fig/20square_aliasing_stft.png" width="250">
+ <img src="./static/fig/30square_aliasing_stft.png" width="250">
+</div>
+
+
+<div align="left">
+ <img src="./static/fig/40square_aliasing_stft.png" width="250">
+<img src="./static/fig/50square_aliasing_stft.png" width="250">
+<img src="./static/fig/70square_aliasing_stft.png" width="250">
 </div>
       
       </div>
